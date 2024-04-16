@@ -44,3 +44,7 @@ body {
 			opacity: 100%;
 			text-align: center;
 		}
+.complicado {
+	font-weight: bold;
+	color: #C62;
+}
