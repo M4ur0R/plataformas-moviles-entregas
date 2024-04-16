@@ -12,9 +12,11 @@ body {
 
 		h1 {
 			font-size: 2rem;
-			text-align: center;
+			text-align: left;
 		}
-
+#titulo {
+	text-align: center;
+}
 		p {
 			font-family: serif;
 		}
