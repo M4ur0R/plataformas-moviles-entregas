@@ -75,8 +75,8 @@ console.log("mejorNumeroRandom(1,6): ", mejorNumeroRandom(1,6))
 
 // Implementar una función "transformarMayuscula" que transforme a mayúscula la palabra recibida como parámetro
 // ejemplo: transformarMayuscula("Plataformas Móviles") retorna "PLATAFORMAS MÓVILES"
-function transformarMayuscula(){
-
+function transformarMayuscula(palabra){
+	return palabra.toUpperCase();
 }
 
 console.log("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayuscula("Plataformas Móviles"))
@@ -84,33 +84,50 @@ console.log("transformarMayuscula(\"Plataformas Móviles\"): ", transformarMayus
 
 // Implementar una función "primeraLetra" que nos devuelva la inicial de la palabra recibida como parámetro
 // ejemplo: primeraLetra("Plataformas") retorna "P"
+function primeraLetra(palabra){
+	return palabra.charAt(0);
+}
 
 console.log("primeraLetra(\"Plataformas\"): ", primeraLetra("Plataformas"))
 
 
 // Implementar una función "ultimaLetra" que nos devuelva la letra final la palabra recibida como parámetro
 // ejemplo: ultimaLetra("Plataformas") retorna "s"
+function ultimaLetra(palabra){
+	return palabra.chatAt(palabra.lenght-1);
+}
 
 console.log("ultimaLetra(\"Plataformas\"): ", ultimaLetra("Plataformas"))
 
 
 // Implementar una función "primeraLetraMayuscula" que devuelve la palabra original con su primera letra en mayúscula
 // ejemplo: primeraLetraMayuscula("plataformas") retorna "Plataformas"
+function priimeraLetraMayuscula(){
+	return palabra.chatAt(0).topperCase() + palabra.slice(1);
+}
 
 console.log("primeraLetraMayuscula(\"plataformas\"): ", primeraLetraMayuscula("plataformas"))
 
 // Implementar una función "palabraAListaDeLetras" que dada una palabra me retorne un listado de sus letras
 // ejemplo: palabraAListaDeLetras("hola") retorna ['h', 'o', 'l', 'a'];
-
+function palabraAListaDeLetra(palabra){
+	return letras.split('')
+	
 console.log("palabraAListaDeLetras(\"hola\"): ", palabraAListaDeLetras("hola"))
 
 // Implementar una función "listaDeLetrasAPalabra" que dado un listado de letras, devuelva una palabra
 // ejemplo: listadoDeLetrasAPalabra(["h", "o", "l", "a"]) retorna "hola";
+function listadoDeLetrasAPalabras(letras){
+	return letras.join('');
+}
 
 console.log("listadoDeLetrasAPalabra([\"h\", \"o\", \"l\", \"a\"]): ", listadoDeLetrasAPalabra(["h", "o", "l", "a"]))
 
 // Implementar una función "palabraInvertida" que devuelva la palabra invertida
 // ejemplo: palabraInvertida("hola") retorna "aloh";
+function palabraInvertida(palabra){
+	return palabra.split('').reverse().join('');
+}
 
 console.log("palabraInvertida(\"hola\"): ", palabraInvertida("hola"))
 
